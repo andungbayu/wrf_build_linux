@@ -1,7 +1,7 @@
 # download geogrid to main folder
 #wget http://www2.mmm.ucar.edu/wrf/src/wps_files/geog_complete.tar.bz2
 wget http://www2.mmm.ucar.edu/wrf/src/wps_files/geog_complete.tar.gz
-tar -xvf geog_complete.tar.bz2
+tar -zxvf geog_complete.tar.gz
 mv geog WPS_GEOG
 
 # configure WPS to use geogrid
