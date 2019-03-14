@@ -1,0 +1,21 @@
+# change memory
+ulimit -s unlimited
+
+# change to 'WRFV3/run' directory
+cd ~/WRF/WRF/run
+
+# begin linking
+ln -sf /home/andung/WRF/WPS/met_em* ./
+
+# edit the namelist.input
+
+# 
+ulimit -s unlimited
+
+# run wrf
+mpirun ./real.exe
+mpirun ./wrf.exe
+
+# check progress
+tail -f rsl.out.0000
+
